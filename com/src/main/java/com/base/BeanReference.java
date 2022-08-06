@@ -2,19 +2,19 @@ package com.base;
 
 public class BeanReference {
     public String getName() {
-        return name;
+        return beanName;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setName(String beanName) {
+        this.beanName = beanName;
     }
 
-    public BeanReference(String name) {
-        this.name = name;
+    public BeanReference(String beanName) {
+        this.beanName = beanName;
     }
     public BeanReference() {
     }
 
-    String name;
+    String beanName;
 
 }

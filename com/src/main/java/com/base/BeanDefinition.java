@@ -1,26 +1,26 @@
 package com.base;
 
 public class BeanDefinition {
-    private Class BeanClass;
+    private Class beanClass;
 
     private PropertyValues propertyValues;
 
     public BeanDefinition(Class beanClass) {
-        BeanClass = beanClass;
+        this.beanClass = beanClass;
         this.propertyValues = new PropertyValues();
     }
 
     public BeanDefinition(Class beanClass, PropertyValues propertyValues) {
-        BeanClass = beanClass;
-        this.propertyValues = propertyValues;
+        this.beanClass = beanClass;
+        this.propertyValues = propertyValues != null ? propertyValues : new PropertyValues();
     }
 
     public Class getBeanClass() {
-        return BeanClass;
+        return beanClass;
     }
 
     public void setBeanClass(Class beanClass) {
-        BeanClass = beanClass;
+        this.beanClass = beanClass;
     }
 
     public PropertyValues getPropertyValues() {

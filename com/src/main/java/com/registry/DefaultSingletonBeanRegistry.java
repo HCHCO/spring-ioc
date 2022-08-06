@@ -4,12 +4,12 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class DefaultSingletonBeanRegistry implements SingletonBeanRegistry{
-    private Map<String,Object> beanDefinitionMap = new HashMap<>();
+    private Map<String,Object> singletonObjects = new HashMap<>();
     @Override
     public Object getSingleton(String beanName) {
-        return beanDefinitionMap.get(beanName);
+        return singletonObjects.get(beanName);
     }
-    protected  void addSingleton(String name,Object beanDefinition){
-        beanDefinitionMap.put(name,beanDefinition);
+    protected void addSingleton(String name,Object singletonObject){
+        singletonObjects.put(name,singletonObject);
     }
 }

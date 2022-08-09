@@ -1,6 +1,7 @@
 package com.reader;
 
 import com.exception.BeansException;
+import com.registry.BeanDefinitionRegistry;
 import com.resource.Loader.ResourceLoader;
 import com.resource.Resource;
 

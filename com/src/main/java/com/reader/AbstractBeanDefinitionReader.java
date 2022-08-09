@@ -1,9 +1,8 @@
 package com.reader;
 
-import com.exception.BeansException;
+import com.registry.BeanDefinitionRegistry;
 import com.resource.Loader.DefaultResourceLoader;
 import com.resource.Loader.ResourceLoader;
-import com.resource.Resource;
 
 public abstract class AbstractBeanDefinitionReader implements BeanDefinitionReader{
     private final BeanDefinitionRegistry registry;

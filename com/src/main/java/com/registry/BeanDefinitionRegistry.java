@@ -1,4 +1,4 @@
-package com.reader;
+package com.registry;
 
 import com.base.BeanDefinition;
 import com.exception.BeansException;

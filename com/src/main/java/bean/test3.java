@@ -1,3 +1,5 @@
+package bean;
+
 import bean.UserDao;
 import bean.UserService;
 import com.base.BeanDefinition;
@@ -5,7 +7,6 @@ import com.base.BeanReference;
 import com.base.PropertyValue;
 import com.base.PropertyValues;
 import com.factory.DefaultListabeBeanFactory;
-import org.junit.Test;
 
 
 public class test3 {

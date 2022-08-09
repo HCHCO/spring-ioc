@@ -5,29 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="394df4df-1471-4ab8-80a1-c261380f2dbf" name="更改" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/base/BeanDefinition.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/base/BeanReference.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/base/PropertyValue.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/base/PropertyValues.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/exception/BeansException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/factory/AbstractAutowireCapableBeanFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/factory/AbstractBeanFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/factory/BeanFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/factory/DefaultListabeBeanFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/proxy/InstantiationStrategy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/proxy/SimpleInstantiationStrategy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/proxy/cglibInstantiationsStrategy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/registry/DefaultSingletonBeanRegistry.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/registry/SingletonBeanRegistry.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/bean/UserDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/bean/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/test3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/reader/XmlBeanDefinitionReader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/test4.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/test4Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/important.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/spring.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/factory/DefaultListabeBeanFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/factory/DefaultListabeBeanFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/reader/AbstractBeanDefinitionReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/reader/AbstractBeanDefinitionReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/reader/BeanDefinitionReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/reader/BeanDefinitionReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/reader/BeanDefinitionRegistry.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/registry/BeanDefinitionRegistry.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/resource/ClassPathResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/resource/ClassPathResource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/resource/Loader/DefaultResourceLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/resource/Loader/DefaultResourceLoader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/bean/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bean/UserDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/bean/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bean/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/test3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bean/test3.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,6 +30,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Tag Library Descriptor" />
         <option value="Class" />
         <option value="JUnit3 Test Class" />
       </list>
@@ -94,29 +88,75 @@
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="junit.framework.TestCase" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\gitclone\spring-oringinal\com\src\test" />
+      <recent name="E:\gitclone\spring-oringinal\com\src\main\resources" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
     <key name="CreateTestDialog.RecentsKey">
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="应用程序.test3">
-    <configuration name="test3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="test3" />
+  <component name="RunManager" selected="JUnit.test4.test_xml">
+    <configuration name="test4Test.test_classpath" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="com" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="test4Test" />
+      <option name="METHOD_NAME" value="test_classpath" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="test3Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="test3Test" />
+    <configuration name="test4Test.test_file" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="com" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="test4Test" />
+      <option name="METHOD_NAME" value="test_file" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test4.test_classpath" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="com" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="test4" />
+      <option name="METHOD_NAME" value="test_classpath" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test4.test_file" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="com" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="test4" />
+      <option name="METHOD_NAME" value="test_file" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test4.test_xml" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="com" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="test4" />
+      <option name="METHOD_NAME" value="test_xml" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="应用程序.test3" />
-        <item itemvalue="应用程序.test3Test" />
+        <item itemvalue="JUnit.test4.test_xml" />
+        <item itemvalue="JUnit.test4.test_classpath" />
+        <item itemvalue="JUnit.test4.test_file" />
+        <item itemvalue="JUnit.test4Test.test_file" />
+        <item itemvalue="JUnit.test4Test.test_classpath" />
       </list>
     </recent_temporary>
   </component>
@@ -129,6 +169,7 @@
       <option name="presentableId" value="Default" />
       <updated>1659512376646</updated>
       <workItem from="1659512383052" duration="4951000" />
+      <workItem from="1660028321559" duration="6775000" />
     </task>
     <servers />
   </component>
@@ -145,6 +186,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
@@ -161,6 +203,21 @@
           <url>file://$PROJECT_DIR$/src/main/java/com/factory/AbstractBeanFactory.java</url>
           <line>17</line>
           <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/test4Test.java</url>
+          <line>26</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/test4Test.java</url>
+          <line>15</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/resource/ClassPathResource.java</url>
+          <line>25</line>
+          <option name="timeStamp" value="15" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

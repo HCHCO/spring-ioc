@@ -5,22 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="394df4df-1471-4ab8-80a1-c261380f2dbf" name="更改" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/reader/XmlBeanDefinitionReader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/test4.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/test4Test.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/important.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/spring.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/base/BeanFactoryPostProcessor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/base/BeanPostProcessor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/context/AbstractApplicationContext.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/context/ApplicationContext.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/context/ConfigurableApplicationContext.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/factory/ConfigurableListableBeanFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/factory/HierarchicalBeanFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/factory/ListableBeanFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/factory/config/AutowireCapableBeanFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/factory/config/ConfigurableBeanFactory.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/factory/DefaultListabeBeanFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/factory/DefaultListabeBeanFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/reader/AbstractBeanDefinitionReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/reader/AbstractBeanDefinitionReader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/reader/BeanDefinitionReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/reader/BeanDefinitionReader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/reader/BeanDefinitionRegistry.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/registry/BeanDefinitionRegistry.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/resource/ClassPathResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/resource/ClassPathResource.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/resource/Loader/DefaultResourceLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/resource/Loader/DefaultResourceLoader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/bean/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bean/UserDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/bean/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bean/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/test3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bean/test3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/com.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/bean/test3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bean/test3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/factory/DefaultListabeBeanFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/factory/DefaultListableBeanFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/test4.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test4.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,8 +30,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Tag Library Descriptor" />
-        <option value="Class" />
         <option value="JUnit3 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -170,6 +169,8 @@
       <updated>1659512376646</updated>
       <workItem from="1659512383052" duration="4951000" />
       <workItem from="1660028321559" duration="6775000" />
+      <workItem from="1660116167359" duration="147000" />
+      <workItem from="1660118748033" duration="4698000" />
     </task>
     <servers />
   </component>
@@ -198,11 +199,6 @@
           <url>file://$PROJECT_DIR$/src/main/java/com/factory/AbstractAutowireCapableBeanFactory.java</url>
           <line>49</line>
           <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/factory/AbstractBeanFactory.java</url>
-          <line>17</line>
-          <option name="timeStamp" value="4" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/test4Test.java</url>

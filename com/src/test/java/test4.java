@@ -1,6 +1,6 @@
 import bean.UserService;
 import cn.hutool.core.io.IoUtil;
-import com.factory.DefaultListabeBeanFactory;
+import com.factory.DefaultListableBeanFactory;
 import com.reader.XmlBeanDefinitionReader;
 import com.resource.Loader.DefaultResourceLoader;
 import com.resource.Resource;
@@ -40,7 +40,7 @@ public class test4 {
     }
     @Test
     public void test_xml(){
-        DefaultListabeBeanFactory beanFactory =new DefaultListabeBeanFactory();
+        DefaultListableBeanFactory beanFactory =new DefaultListableBeanFactory();
         XmlBeanDefinitionReader reader = new XmlBeanDefinitionReader(beanFactory);
         reader.loadBeanDefinitions("classpath:spring.xml");
         UserService userService =(UserService) beanFactory.getBean("userService");

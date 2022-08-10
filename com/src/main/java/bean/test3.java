@@ -1,17 +1,15 @@
 package bean;
 
-import bean.UserDao;
-import bean.UserService;
 import com.base.BeanDefinition;
 import com.base.BeanReference;
 import com.base.PropertyValue;
 import com.base.PropertyValues;
-import com.factory.DefaultListabeBeanFactory;
+import com.factory.DefaultListableBeanFactory;
 
 
 public class test3 {
     public static void main(String[] args) {
-        DefaultListabeBeanFactory beanFactory = new DefaultListabeBeanFactory();
+        DefaultListableBeanFactory beanFactory = new DefaultListableBeanFactory();
         beanFactory.registerBeanDefinition("userDao",new BeanDefinition(UserDao.class));
         PropertyValues propertyValues = new PropertyValues();
         propertyValues.addPropertyValue(new PropertyValue("uId","1001"));

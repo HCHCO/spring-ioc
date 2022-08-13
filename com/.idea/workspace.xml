@@ -5,21 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="394df4df-1471-4ab8-80a1-c261380f2dbf" name="更改" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/base/BeanFactoryPostProcessor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/base/BeanPostProcessor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/context/AbstractApplicationContext.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/context/ApplicationContext.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/context/ConfigurableApplicationContext.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/factory/ConfigurableListableBeanFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/factory/HierarchicalBeanFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/factory/ListableBeanFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/factory/config/AutowireCapableBeanFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/factory/config/ConfigurableBeanFactory.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/com.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/bean/test3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bean/test3.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/factory/DefaultListabeBeanFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/factory/DefaultListableBeanFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/test4.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test4.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/base/BeanFactoryPostProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/base/BeanFactoryPostProcessor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/context/AbstractApplicationContext.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/context/AbstractApplicationContext.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/context/ConfigurableApplicationContext.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/context/ConfigurableApplicationContext.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/factory/DefaultListableBeanFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/factory/DefaultListableBeanFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/factory/ListableBeanFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/factory/ListableBeanFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/factory/config/ConfigurableBeanFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/factory/config/ConfigurableBeanFactory.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -171,6 +163,7 @@
       <workItem from="1660028321559" duration="6775000" />
       <workItem from="1660116167359" duration="147000" />
       <workItem from="1660118748033" duration="4698000" />
+      <workItem from="1660372571456" duration="2958000" />
     </task>
     <servers />
   </component>

@@ -7,4 +7,9 @@ import exception.BeansException;
  */
 public interface ConfigurableApplicationContext extends ApplicationContext{
     void refresh() throws BeansException;
+
+    // v8.0
+    void registerShutdownHook();
+
+    void close();
 }

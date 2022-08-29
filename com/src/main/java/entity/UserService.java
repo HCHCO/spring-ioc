@@ -1,6 +1,10 @@
 package entity;
 
-public class UserService {
+import exception.BeansException;
+import factory.initializing.DisposableBean;
+import factory.initializing.InitializingBean;
+
+public class UserService implements InitializingBean, DisposableBean {
     // test 3
     private String uId;
     private UserDao userDao;
@@ -52,5 +56,15 @@ public class UserService {
 
     public void setLocation(String location) {
         this.location = location;
+    }
+    // v8.0
+    @Override
+    public void destory() throws Exception {
+        System.out.println("userservice destory");
+    }
+
+    @Override
+    public void afterPropertiesSet() throws BeansException {
+        System.out.println("userservice afterpropertiesSet");
     }
 }

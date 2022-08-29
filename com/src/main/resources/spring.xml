@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <beans>
-    <bean id = "userDao" class="entity.UserDao"/>
+
+    <!--<bean id = "userDao" class="entity.UserDao"/>-->
+    <!-- v8.0-->
+    <bean id="userDao" class="entity.UserDao" init-method="initDataMethod" destroy-method = "destroyDataMethod"/>
     <bean id = "userService" class="entity.UserService">
         <property name = "uId" value="10001"/>
         <property name ="company" value ="sb"/>

@@ -14,6 +14,10 @@ import factory.initializing.DisposableBeanAdapter;
 import factory.initializing.InitializingBean;
 import factory.instance.CglibSubclassingInstantionStrategy;
 import factory.instance.InstantiationStrategy;
+import factory.know.Aware;
+import factory.know.BeanClassLoaderAware;
+import factory.know.BeanFactoryAware;
+import factory.know.BeanNameAware;
 
 import java.lang.reflect.Constructor;
 import java.lang.reflect.Method;
@@ -22,7 +26,8 @@ public abstract class AbstractAutowireCapableBeanFactory extends AbstractBeanFac
     private InstantiationStrategy instantiationStrategy = new CglibSubclassingInstantionStrategy();
     @Override
     protected Object createBean(String beanName, BeanDefinition beanDefinition,Object[] args) throws BeansException {
-        Object bean;
+        // v9.0
+        Object bean = null;
         try{
             // v2.0
             //    bean = beanDefinition.getBeanClass().newInstance();
@@ -78,7 +83,18 @@ public abstract class AbstractAutowireCapableBeanFactory extends AbstractBeanFac
 
     // v7.0 initializeBean
     private  Object initializeBean(String beanName,Object bean,BeanDefinition beanDefinition){
-
+        // v9.0
+        if(bean instanceof Aware) {
+            if(bean instanceof BeanFactoryAware){
+                ((BeanFactoryAware) bean).setBeanFactory(this);
+            }
+            if(bean instanceof BeanClassLoaderAware){
+                ((BeanClassLoaderAware) bean).setBeanClassLoader(getBeanClassLoader());
+            }
+            if(bean instanceof BeanNameAware){
+                ((BeanNameAware) bean).setBeanName(beanName);
+            }
+        }
         Object wrappedBean = applyBeanPostProcessorsBeforeInitialization(bean,beanName);
         // v8.0
         try {
@@ -88,6 +104,7 @@ public abstract class AbstractAutowireCapableBeanFactory extends AbstractBeanFac
         }
         wrappedBean = applyBeanPostProcessorsAfterInitialization(bean,beanName);
         return  wrappedBean;
+
     }
     // v8.0
     private void invokeInitMethods(String beanName,Object wrappedBean,BeanDefinition beanDefinition)throws  Exception{

@@ -5,9 +5,9 @@ import factory.reader.ClassPathXmlApplicationContext;
 
 public class test7 {
     public static void main(String[] args) {
-        ClassPathXmlApplicationContext applicationContext = new ClassPathXmlApplicationContext("classpath:spring.xml");
+        ClassPathXmlApplicationContext applicationContext = new ClassPathXmlApplicationContext("classpath:springa.xml");
         applicationContext.registerShutdownHook();
-        UserService userService = applicationContext.getBean("userService",UserService.class);
+        UserServiceA userService = applicationContext.getBean("userServiceA",UserServiceA.class);
         String result = userService.queryUserInfo();
         System.out.println(result);
     }

@@ -5,6 +5,7 @@ import bean.postprocessor.BeanFactoryPostProcessor;
 import bean.postprocessor.BeanPostProcessor;
 import exception.BeansException;
 import factory.ConfigurableListableBeanFactory;
+import factory.know.ApplicaitonContextAwareProcessor;
 
 import java.util.Map;
 /*
@@ -18,6 +19,8 @@ public abstract class AbstractApplicationContext extends DefaultResourceLoader i
         refreshBeanFactory();
         // 获取beanFactory
         ConfigurableListableBeanFactory beanFactory = getBeanFactory();
+        // v9.0 添加 ApplicationContextAwareProcessor，让继承自 ApplicationContextAware 的 Bean 对象都能感知所属的 ApplicationContext
+        beanFactory.addBeanPostProcessor(new ApplicaitonContextAwareProcessor(this));
         //在bean实例化前beanfactorypostprocessor
         invokeBeanFactoryPostProcessors(beanFactory);
         //注册

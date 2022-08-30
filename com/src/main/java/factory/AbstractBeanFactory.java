@@ -2,10 +2,12 @@ package factory;
 
 import bean.BeanDefinition;
 import bean.postprocessor.BeanPostProcessor;
+import cn.hutool.core.util.ClassUtil;
 import exception.BeansException;
 import factory.config.BeanFactory;
 import factory.config.ConfigurableBeanFactory;
 import factory.registry.DefaultSingletonBeanRegistry;
+import org.springframework.util.ClassUtils;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -13,6 +15,8 @@ import java.util.List;
 public  abstract class AbstractBeanFactory extends DefaultSingletonBeanRegistry implements ConfigurableBeanFactory {
     // v7.0
     private final List<BeanPostProcessor> beanPostProcessors = new ArrayList<BeanPostProcessor>();
+    // v9.0
+    private  ClassLoader beanClassLoader = ClassUtils.getDefaultClassLoader();
 
     @Override
     public Object getBean(String name) throws BeansException {
@@ -51,4 +55,9 @@ public  abstract class AbstractBeanFactory extends DefaultSingletonBeanRegistry 
     public List<BeanPostProcessor> getBeanPostProcessors(){
         return  this.beanPostProcessors;
     }
+    // v9.0
+    public  ClassLoader getBeanClassLoader(){
+        return  this.beanClassLoader;
+    }
+
 }

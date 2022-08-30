@@ -60,11 +60,11 @@ public class UserService implements InitializingBean, DisposableBean {
     // v8.0
     @Override
     public void destory() throws Exception {
-        System.out.println("userservice destory");
+        System.out.println("userservice:destory method");
     }
 
     @Override
     public void afterPropertiesSet() throws BeansException {
-        System.out.println("userservice afterpropertiesSet");
+        System.out.println("userservice do afterPropertiesSet");
     }
 }

@@ -5,21 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="394df4df-1471-4ab8-80a1-c261380f2dbf" name="更改" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/entity/test7/test7.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/factory/initializing/DisposableBean.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/factory/initializing/DisposableBeanAdapter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/factory/initializing/InitializingBean.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/bean/BeanDefinition.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bean/BeanDefinition.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/entity/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entity/UserDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/entity/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entity/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/factory/AbstractAutowireCapableBeanFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/factory/AbstractAutowireCapableBeanFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/factory/ConfigurableListableBeanFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/factory/ConfigurableListableBeanFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/factory/context/AbstractApplicationContext.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/factory/context/AbstractApplicationContext.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/factory/context/ConfigurableApplicationContext.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/factory/context/ConfigurableApplicationContext.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/factory/reader/XmlBeanDefinitionReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/factory/reader/XmlBeanDefinitionReader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/factory/registry/DefaultSingletonBeanRegistry.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/factory/registry/DefaultSingletonBeanRegistry.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/spring.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/spring.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -101,7 +87,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="应用程序.test7">
+  <component name="RunManager" selected="应用程序.test">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="entity.Main" />
       <module name="com" />
@@ -166,8 +152,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="应用程序.test7" />
         <item itemvalue="应用程序.test" />
+        <item itemvalue="应用程序.test7" />
         <item itemvalue="应用程序.test5" />
         <item itemvalue="应用程序.Main" />
         <item itemvalue="JUnit.test4.test_xml" />
@@ -190,7 +176,8 @@
       <workItem from="1660637901308" duration="281000" />
       <workItem from="1661488634490" duration="16618000" />
       <workItem from="1661677320326" duration="8976000" />
-      <workItem from="1661739643285" duration="6561000" />
+      <workItem from="1661739643285" duration="6792000" />
+      <workItem from="1661906363127" duration="89000" />
     </task>
     <servers />
   </component>

@@ -4,7 +4,10 @@ import bean.BeanDefinition;
 import bean.BeanReference;
 import bean.property.PropertyValue;
 import bean.property.PropertyValues;
+import entity.test8.UserService8;
 import factory.DefaultListableBeanFactory;
+import factory.reader.ClassPathXmlApplicationContext;
+
 
 public class Main {
     public static void main(String[] args) {
@@ -40,5 +43,8 @@ public class Main {
         beanFactory.registerBeanDefinition("userService",beanDefinition);
         UserService userService = (UserService) beanFactory.getBean("userService");
         userService.queryUserInfo();
+
+        //
+        //System.out.println(ClassLayout.parseInstance(userService).toPrintable());
     }
 }

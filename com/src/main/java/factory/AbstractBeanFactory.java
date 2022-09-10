@@ -6,18 +6,29 @@ import cn.hutool.core.util.ClassUtil;
 import exception.BeansException;
 import factory.config.BeanFactory;
 import factory.config.ConfigurableBeanFactory;
+import factory.factorybean.FactoryBeanRegistrySupport;
 import factory.registry.DefaultSingletonBeanRegistry;
 import org.springframework.util.ClassUtils;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public  abstract class AbstractBeanFactory extends DefaultSingletonBeanRegistry implements ConfigurableBeanFactory {
+public  abstract class AbstractBeanFactory extends FactoryBeanRegistrySupport implements ConfigurableBeanFactory {
     // v7.0
     private final List<BeanPostProcessor> beanPostProcessors = new ArrayList<BeanPostProcessor>();
     // v9.0
     private  ClassLoader beanClassLoader = ClassUtils.getDefaultClassLoader();
-
+    private Object getObjectFromBeanInstance(Object beanInstance,String beanName){
+        if(!(beanInstance instanceof FactoryBean)){
+            return beanInstance;
+        }
+        Object object = getCachedObjectForFactoryBean(beanName);
+        if(object ==null){
+            FactoryBean<?> factoryBean = (FactoryBean<?>) beanInstance;
+            object = getObjectFromFactoryBean(factoryBean,beanName);
+        }
+        return object;
+    }
     @Override
     public Object getBean(String name) throws BeansException {
         // SingletonBeanRegistry->DefaultSingletonBeanRegistry-> getSingleton
@@ -33,13 +44,15 @@ public  abstract class AbstractBeanFactory extends DefaultSingletonBeanRegistry 
     public <T> T getBean(String name, Class<T> requiredType) throws BeansException {
         return (T) getBean(name);
     }
+    // v 9.0
     protected <T> T doGetBean(final String name,final Object[] args){
-        Object bean = getSingleton(name);
-        if(bean!=null){
-            return (T) bean;
+        Object sharedInstance = getSingleton(name);
+        if(sharedInstance !=null){
+            return (T) getObjectFromBeanInstance(sharedInstance,name);
         }
         BeanDefinition beanDefinition = getBeanDefinition(name);
-        return  (T) createBean(name,beanDefinition,args);
+        Object bean  = createBean(name,beanDefinition,args);
+        return (T) getObjectFromBeanInstance(bean,name);
     }
 
     protected abstract BeanDefinition getBeanDefinition(String name)throws BeansException;

@@ -79,6 +79,8 @@ public class XmlBeanDefinitionReader extends AbstractBeanDefinitionReader{
             Class<?> clazz = Class.forName(className);
             // 优先级 id > name
             String beanName = StrUtil.isNotEmpty(id) ? id : name;
+            // v9.0
+            String beanScope = bean.getAttribute("scope");
             if (StrUtil.isEmpty(beanName)) {
                 beanName = StrUtil.lowerFirst(clazz.getSimpleName());
             }
@@ -88,6 +90,10 @@ public class XmlBeanDefinitionReader extends AbstractBeanDefinitionReader{
             // v8.0 额外设置到beanDefinition中
             beanDefinition.setInitMethodName(initMethod);
             beanDefinition.setDestoryMethodName(destroyMethodName);
+            // v9.0
+            if(StrUtil.isNotEmpty(beanScope)){
+                beanDefinition.setScope(beanScope);
+            }
 
             // 读取属性并填充
             for (int j = 0; j < bean.getChildNodes().getLength(); j++) {
